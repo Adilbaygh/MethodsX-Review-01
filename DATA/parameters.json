@@ -1,0 +1,209 @@
+{
+  "schema": "grossreq-parameters/1",
+  "title": "Parameters of the worked example: net field demand to boundary-specific gross requirements",
+  "dataset": {
+    "file": "DATA/gone_abat_jap_am2a.json",
+    "name": "Gone Abat Jap open-canal irrigation network, 16-period version (am2a)",
+    "doi": "10.17632/xt3gsf89n9.1",
+    "demand_meaning": "net field irrigation requirement per terminal, m3 per dekad",
+    "demand_meaning_source": "author confirmation, 2026-11-09",
+    "positions_meaning": "x coordinate of node_positions is the picket (chainage) along the main canal; y is a drawing offset only",
+    "positions_meaning_source": "author confirmation, 2026-11-09 and 2026-11-10"
+  },
+  "variants": {
+    "primary": "dataset",
+    "sensitivity": "rule",
+    "provenance": "author decision",
+    "source": "author decision, 2026-11-10: terminal edges are earthen canals of unknown length, so the dataset efficiencies are the primary case and the short-edge efficiency rule is a sensitivity case",
+    "status": "confirmed"
+  },
+  "edge_rules": {
+    "short_picket_threshold_m": {
+      "value": 10.0,
+      "description": "sensitivity variant \"rule\" only: terminal edges whose picket difference is below this value receive the length-proportional efficiency",
+      "provenance": "author decision",
+      "source": "author decision, 2026-11-10",
+      "status": "confirmed"
+    },
+    "eta_short_max": {
+      "value": 0.99,
+      "description": "sensitivity variant \"rule\" only: efficiency assigned to the shortest edge of the short group",
+      "provenance": "author decision",
+      "source": "author decision, 2026-11-10",
+      "status": "confirmed"
+    },
+    "eta_short_min": {
+      "value": 0.95,
+      "description": "sensitivity variant \"rule\" only: efficiency assigned to the longest edge of the short group",
+      "provenance": "author decision",
+      "source": "author decision, 2026-11-10",
+      "status": "confirmed"
+    },
+    "outlets_at_junction": {
+      "value": [
+        "T9",
+        "T10",
+        "T11",
+        "T12",
+        "T13",
+        "T14",
+        "T18"
+      ],
+      "description": "sensitivity variant \"rule\" only: terminals whose outlet is placed at the picket of their junction node, because their drawn x value is a layout position",
+      "provenance": "author decision",
+      "source": "author decision, 2026-11-10",
+      "status": "confirmed"
+    }
+  },
+  "parameters": {
+    "eta_a": {
+      "symbol": "\\eta^{a}",
+      "description": "field application efficiency, the same for all terminals",
+      "unit": "-",
+      "nominal": 0.43,
+      "distribution": {
+        "type": "triangular",
+        "low": 0.37,
+        "mode": 0.43,
+        "high": 0.5
+      },
+      "provenance": "literature (lower Amu Darya, Khorezm)",
+      "source": "Nominal and lower bound: Awan U.K., Tischbein B., Martius C. (2013) Irrig. Sci. 31, 793-806, doi:10.1007/s00271-012-0362-0, p. 798: average field application ratio 0.43, range 0.37-0.47 for silt loam and silty clay loam soils (Shomakhulum WUA, Khorezm). Upper bound: Tischbein B. et al. (2012) in: Cotton, Water, Salts and Soums, Springer, 69-92, doi:10.1007/978-94-007-1963-7_5, p. 77: application efficiency of 50% in an 850-ha sub-unit in Khorezm (field observations 40-50%, p. 75). The FAO indicative value of 60% for surface irrigation (Brouwer, Prins, Heibloem 1989, Training manual no. 4, Annex I, Table 8) and the improved-practice targets of 0.65-0.67 (Tischbein B. et al. (2012) in: Cotton, Water, Salts and Soums, Springer, 69-92, doi:10.1007/978-94-007-1963-7_5, p. 87; Awan U.K., Tischbein B., Martius C. (2013) Irrig. Sci. 31, 793-806, doi:10.1007/s00271-012-0362-0, p. 800) lie above the current-conditions range.",
+      "status": "confirmed"
+    },
+    "edge_loss_rel_halfwidth": {
+      "symbol": "r",
+      "description": "relative half-width of the uniform uncertainty of every edge loss fraction 1 - eta_e; the nominal eta_e comes from the dataset or the short-edge rule",
+      "unit": "-",
+      "nominal": 0.3,
+      "distribution": null,
+      "provenance": "assumed",
+      "source": "Of the order of the spread of conveyance efficiencies reported in the reviewed studies: 51% (Gilsha Bai E.B., Rema K.P., Joseph A., Sathian K.K. (2023) JAEI 60, 74-85, doi:10.52151/jae2023601.1798) and 74% (Melsse D.W., Tegegne M.A., Ayele T.M. (2025) Appl. Water Sci. 15, 300, doi:10.1007/s13201-025-02659-z), i.e. losses of 0.26-0.49, about +/-31% around their midpoint. Ponding tests in Khorezm gave losses of about 5% of the discharge per 100 m in small canals of low hierarchy and much lower losses in larger canals (Tischbein B. et al. (2012) in: Cotton, Water, Salts and Soums, Springer, 69-92, doi:10.1007/978-94-007-1963-7_5, p. 86).",
+      "status": "provisional"
+    },
+    "phi_E": {
+      "symbol": "\\phi^{E}",
+      "description": "share of edge losses that evaporates from the canal water surface (consumed)",
+      "unit": "-",
+      "nominal": 0.03,
+      "distribution": {
+        "type": "uniform",
+        "low": 0.01,
+        "high": 0.05
+      },
+      "provenance": "literature (nominal); assumed (range)",
+      "source": "Awan U.K., Tischbein B., Martius C. (2013) Irrig. Sci. 31, 793-806, doi:10.1007/s00271-012-0362-0, p. 798: about 3% of the irrigation losses evaporate, about 7% go directly to the drains as operational losses and 90% recharge the aquifer (lower Amu Darya, Khorezm). The partition is given there for total losses; it is applied here to canal losses. Range assumed.",
+      "status": "confirmed"
+    },
+    "phi_O": {
+      "symbol": "\\phi^{O}",
+      "description": "share of edge losses that leaves as operational spills",
+      "unit": "-",
+      "nominal": 0.07,
+      "distribution": {
+        "type": "triangular",
+        "low": 0.0,
+        "mode": 0.07,
+        "high": 0.2
+      },
+      "provenance": "literature (nominal); assumed (range)",
+      "source": "Awan U.K., Tischbein B., Martius C. (2013) Irrig. Sci. 31, 793-806, doi:10.1007/s00271-012-0362-0, p. 798: about 7% of the irrigation losses go directly to the drains as operational losses. Range assumed, because operational losses are hard to quantify (Tischbein B. et al. (2012) in: Cotton, Water, Salts and Soums, Springer, 69-92, doi:10.1007/978-94-007-1963-7_5, p. 87).",
+      "status": "confirmed"
+    },
+    "rho_S": {
+      "symbol": "\\rho^{S}",
+      "description": "fraction of canal seepage that is recoverable within the basin",
+      "unit": "-",
+      "nominal": 0.5,
+      "distribution": {
+        "type": "uniform",
+        "low": 0.0,
+        "high": 1.0
+      },
+      "provenance": "assumed",
+      "source": "No study quantifies the recoverable fraction for the lower Amu Darya. Context: drainage outflow is 55-67% of the irrigation input (Tischbein B. et al. (2012) in: Cotton, Water, Salts and Soums, Springer, 69-92, doi:10.1007/978-94-007-1963-7_5, pp. 76 and 85; Conrad C. et al. (2013) Phys. Chem. Earth 61-62, 52-62, doi:10.1016/j.pce.2013.05.002, p. 59); re-use of drainage water is limited by its salinity of 2.0-2.5 g/l (Conrad C. et al. (2013) Phys. Chem. Earth 61-62, 52-62, doi:10.1016/j.pce.2013.05.002, p. 59); capillary rise from shallow groundwater supplies 16-33% of crop evapotranspiration (Awan U.K., Tischbein B., Martius C. (2013) Irrig. Sci. 31, 793-806, doi:10.1007/s00271-012-0362-0, p. 800; Awan U.K., Tischbein B., Martius C. (2014) Irrig. Sci. 32, 449-458, doi:10.1007/s00271-014-0441-5, p. 457; Tischbein B. et al. (2012) in: Cotton, Water, Salts and Soums, Springer, 69-92, doi:10.1007/978-94-007-1963-7_5, p. 85). The full admissible range is therefore kept, with its midpoint as the nominal value.",
+      "status": "provisional"
+    },
+    "rho_O": {
+      "symbol": "\\rho^{O}",
+      "description": "fraction of operational spills that is recoverable within the basin",
+      "unit": "-",
+      "nominal": 0.5,
+      "distribution": {
+        "type": "uniform",
+        "low": 0.0,
+        "high": 1.0
+      },
+      "provenance": "assumed",
+      "source": "No study quantifies the recoverable fraction for the lower Amu Darya. Context: drainage outflow is 55-67% of the irrigation input (Tischbein B. et al. (2012) in: Cotton, Water, Salts and Soums, Springer, 69-92, doi:10.1007/978-94-007-1963-7_5, pp. 76 and 85; Conrad C. et al. (2013) Phys. Chem. Earth 61-62, 52-62, doi:10.1016/j.pce.2013.05.002, p. 59); re-use of drainage water is limited by its salinity of 2.0-2.5 g/l (Conrad C. et al. (2013) Phys. Chem. Earth 61-62, 52-62, doi:10.1016/j.pce.2013.05.002, p. 59); capillary rise from shallow groundwater supplies 16-33% of crop evapotranspiration (Awan U.K., Tischbein B., Martius C. (2013) Irrig. Sci. 31, 793-806, doi:10.1007/s00271-012-0362-0, p. 800; Awan U.K., Tischbein B., Martius C. (2014) Irrig. Sci. 32, 449-458, doi:10.1007/s00271-014-0441-5, p. 457; Tischbein B. et al. (2012) in: Cotton, Water, Salts and Soums, Springer, 69-92, doi:10.1007/978-94-007-1963-7_5, p. 85). The full admissible range is therefore kept, with its midpoint as the nominal value.",
+      "status": "provisional"
+    },
+    "rho_F": {
+      "symbol": "\\rho^{F}",
+      "description": "fraction of field losses (deep percolation and runoff) that is recoverable within the basin",
+      "unit": "-",
+      "nominal": 0.5,
+      "distribution": {
+        "type": "uniform",
+        "low": 0.0,
+        "high": 1.0
+      },
+      "provenance": "assumed",
+      "source": "No study quantifies the recoverable fraction for the lower Amu Darya. Context: drainage outflow is 55-67% of the irrigation input (Tischbein B. et al. (2012) in: Cotton, Water, Salts and Soums, Springer, 69-92, doi:10.1007/978-94-007-1963-7_5, pp. 76 and 85; Conrad C. et al. (2013) Phys. Chem. Earth 61-62, 52-62, doi:10.1016/j.pce.2013.05.002, p. 59); re-use of drainage water is limited by its salinity of 2.0-2.5 g/l (Conrad C. et al. (2013) Phys. Chem. Earth 61-62, 52-62, doi:10.1016/j.pce.2013.05.002, p. 59); capillary rise from shallow groundwater supplies 16-33% of crop evapotranspiration (Awan U.K., Tischbein B., Martius C. (2013) Irrig. Sci. 31, 793-806, doi:10.1007/s00271-012-0362-0, p. 800; Awan U.K., Tischbein B., Martius C. (2014) Irrig. Sci. 32, 449-458, doi:10.1007/s00271-014-0441-5, p. 457; Tischbein B. et al. (2012) in: Cotton, Water, Salts and Soums, Springer, 69-92, doi:10.1007/978-94-007-1963-7_5, p. 85). The full admissible range is therefore kept, with its midpoint as the nominal value.",
+      "status": "provisional"
+    },
+    "delta_S": {
+      "symbol": "\\Delta S",
+      "description": "change of water stored in the canals over a dekad",
+      "unit": "m3",
+      "nominal": 0.0,
+      "distribution": null,
+      "provenance": "assumed",
+      "source": "Neglected at the dekad scale (model, section 5); stated as an assumption in the article.",
+      "status": "provisional"
+    }
+  },
+  "uncertainty": {
+    "master_seed": 20261110,
+    "n_monte_carlo": 10000,
+    "sobol_base_n": 32768,
+    "sobol_bootstrap": 500,
+    "edge_correlation_cases": [
+      "independent",
+      "common"
+    ],
+    "sobol_groups": [
+      "eta_a",
+      "eta_e_main",
+      "eta_e_terminal",
+      "phi_E",
+      "phi_O",
+      "rho_S",
+      "rho_O",
+      "rho_F"
+    ]
+  },
+  "temporal": {
+    "flow_dependent_edge_type": "main",
+    "reference_flow": "seasonal mean inflow discharge of each edge in the linear model",
+    "canal_bed_soil": {
+      "value": "sand, sandy loam",
+      "provenance": "archival document",
+      "source": "Cadastral data (passport) of the Kizketken canal system, table of actual canal parameters, row \"soils on sections\" for the Kegeyli canal (unpublished; authors' archive). The Kegeyli canal soil is used for the main canal of the worked example (authors' information, 2026-11-11).",
+      "status": "confirmed"
+    },
+    "kostiakov_m": {
+      "symbol": "m",
+      "description": "exponent of the discharge dependence of seepage losses (seepage fraction proportional to Q^-m)",
+      "nominal": 0.5,
+      "sensitivity": [
+        0.45
+      ],
+      "provenance": "literature",
+      "source": "Nominal 0.5: Kostiakov A.N. (1960) Osnovy melioratsii [Fundamentals of land reclamation], 6th ed., Sel'khozgiz, Moscow, pp. 187-188: seepage loss sigma = A/Q^m, in percent of the discharge per km of canal, with Q in m3/s; canals in light soils A = 3.4, m = 0.5 (author's data); observations of SANIIRI on canals in Central Asia give m = 0.5 for light, medium and heavy soils (A = 2.85-3.5, 1.87-2.3 and 1.0-1.3). The canal bed is sand and sandy loam (see canal_bed_soil), a light soil. Sensitivity 0.45: Syed N.S.B., Zhao S. (2023) J. Water Land Dev. 57, 21-29, doi:10.24425/jwld.2023.145332, pp. 23-24: permeability index 0.45 of the Kostiakov formula for silt clay loam (SCL) canal bed soil (after Zhang et al., 2017).",
+      "status": "confirmed"
+    },
+    "fixed_point_tolerance": 1e-15,
+    "max_iterations": 200
+  }
+}

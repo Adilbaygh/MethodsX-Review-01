@@ -1,0 +1,7 @@
+# Line endings. Source files are stored with LF. The dataset and the expected outputs are stored
+# byte for byte, so that DATA/SHA256SUMS and the result files match after a clone on any platform.
+* text=auto eol=lf
+DATA/** -text
+results/** -text
+*.png binary
+*.pdf binary

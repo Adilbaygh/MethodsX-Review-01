@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below, together with the dataset listed under references."
+type: software
+title: "grossreq: worked example from field-level net irrigation demand to boundary-specific gross requirements"
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/Adilbaygh/MethodsX-Review-01"
+authors:
+  - family-names: Kudaybergenov
+    given-names: Adilbay
+    affiliation: "National University of Uzbekistan named after Mirzo Ulugbek; Karakalpak State University named after Berdakh"
+keywords:
+  - conveyance efficiency
+  - seepage
+  - water balance closure
+  - return flow
+  - water accounting
+  - uncertainty analysis
+references:
+  - type: data
+    title: "Input Data and Controlled-Scenario Outputs for the Gone Abat Jap Irrigation Allocation Model"
+    authors:
+      - family-names: Kudaybergenov
+        given-names: Adilbay
+      - family-names: Kabulov
+        given-names: Anvar
+      - family-names: Kazimbetova
+        given-names: Mukhabbad
+      - family-names: Ametova
+        given-names: Gulsara
+      - family-names: Ispanova
+        given-names: Jadira
+    publisher:
+      name: "Mendeley Data"
+    version: "1"
+    year: 2026
+    doi: 10.17632/xt3gsf89n9.1

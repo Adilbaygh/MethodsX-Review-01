@@ -1,0 +1,599 @@
+{
+  "all_checks_passed": true,
+  "checks": [
+    {
+      "name": "closure_max_abs_residual[dataset]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 3.7906754233245735e-16
+    },
+    {
+      "name": "node_continuity_max_abs[dataset]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 0.0
+    },
+    {
+      "name": "edge_loss_identity_max_abs[dataset]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 9.73786391616888e-17
+    },
+    {
+      "name": "basin_depletion_identity_max_abs[dataset]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 2.513575972979175e-16
+    },
+    {
+      "name": "closed_form_max_rel_diff[dataset]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 4.629431594007682e-16
+    },
+    {
+      "name": "linearity_rel_diff[dataset]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 0.0
+    },
+    {
+      "name": "fast_evaluator_max_rel_diff[dataset]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 4.754255449334067e-16
+    },
+    {
+      "name": "basin_bounds_violation[dataset]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 0.0
+    },
+    {
+      "name": "basin_equals_head_at_rho0[dataset]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 0.0
+    },
+    {
+      "name": "basin_equals_consumed_at_rho1[dataset]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 8.637375251110506e-16
+    },
+    {
+      "name": "closure_max_abs_residual[rule]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 4.980701731834825e-16
+    },
+    {
+      "name": "node_continuity_max_abs[rule]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 0.0
+    },
+    {
+      "name": "edge_loss_identity_max_abs[rule]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 1.0174659987683789e-16
+    },
+    {
+      "name": "basin_depletion_identity_max_abs[rule]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 3.699378096216982e-16
+    },
+    {
+      "name": "closed_form_max_rel_diff[rule]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 3.9413874615513786e-16
+    },
+    {
+      "name": "linearity_rel_diff[rule]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 1.5140332504895323e-16
+    },
+    {
+      "name": "fast_evaluator_max_rel_diff[rule]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 4.625541988060241e-16
+    },
+    {
+      "name": "basin_bounds_violation[rule]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 0.0
+    },
+    {
+      "name": "basin_equals_head_at_rho0[rule]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 0.0
+    },
+    {
+      "name": "basin_equals_consumed_at_rho1[rule]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 8.679654883732761e-16
+    },
+    {
+      "name": "dataset_variant_requires_more_water_every_dekad",
+      "passed": true,
+      "tolerance": null,
+      "value": true
+    },
+    {
+      "name": "M1_equals_M0_max_rel_diff[dataset]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 0.0
+    },
+    {
+      "name": "benchmark_season_sum_rel[dataset]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 1.1807687486742132e-17
+    },
+    {
+      "name": "attribution_P_sums_to_head_rel[dataset]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 1.3142469550460808e-16
+    },
+    {
+      "name": "attribution_M0_sums_to_head_rel[dataset]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 0.0
+    },
+    {
+      "name": "M1_equals_M0_max_rel_diff[rule]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 0.0
+    },
+    {
+      "name": "benchmark_season_sum_rel[rule]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 4.139934669307315e-18
+    },
+    {
+      "name": "attribution_P_sums_to_head_rel[rule]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 1.5140332504895323e-16
+    },
+    {
+      "name": "attribution_M0_sums_to_head_rel[rule]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 0.0
+    },
+    {
+      "name": "sobol_phi_rho_have_no_effect_on_G_h",
+      "passed": true,
+      "tolerance": null,
+      "value": true
+    },
+    {
+      "name": "temporal_m0_reproduces_linear[dataset]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 1.3142469550460808e-16
+    },
+    {
+      "name": "temporal_season_scale_equals_linear[dataset]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 0.0
+    },
+    {
+      "name": "temporal_closure_max_abs[dataset]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 3.7906754233245735e-16
+    },
+    {
+      "name": "temporal_edge_and_basin_identity_max_abs[dataset]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 4.765353116722448e-16
+    },
+    {
+      "name": "temporal_fixed_point_residual_max[dataset]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 2.3423147955046583e-16
+    },
+    {
+      "name": "temporal_m0_reproduces_linear[rule]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 3.0280665009790646e-16
+    },
+    {
+      "name": "temporal_season_scale_equals_linear[rule]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 3.0280665009790646e-16
+    },
+    {
+      "name": "temporal_closure_max_abs[rule]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 4.980701731834825e-16
+    },
+    {
+      "name": "temporal_edge_and_basin_identity_max_abs[rule]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 6.416075984417484e-16
+    },
+    {
+      "name": "temporal_fixed_point_residual_max[rule]",
+      "passed": true,
+      "tolerance": 1e-12,
+      "value": 2.1673455418204762e-16
+    }
+  ],
+  "dataset": {
+    "file": "DATA/gone_abat_jap_am2a.json",
+    "sha256": "5f6a16e9ba5a4cec896492032889e9f6e0970ae13cd8e7da93ff105719994cb5"
+  },
+  "files": [
+    "run_summary.json",
+    "tables/benchmark_dekad.csv",
+    "tables/benchmark_terminals.csv",
+    "tables/dataset/capacity_exceedances.csv",
+    "tables/dataset/closure.csv",
+    "tables/dataset/dekad_totals.csv",
+    "tables/dataset/edge_flows.csv",
+    "tables/dataset/terminal_flows.csv",
+    "tables/edge_parameters.csv",
+    "tables/parameters.csv",
+    "tables/rule/capacity_exceedances.csv",
+    "tables/rule/closure.csv",
+    "tables/rule/dekad_totals.csv",
+    "tables/rule/edge_flows.csv",
+    "tables/rule/terminal_flows.csv",
+    "tables/sobol_indices.csv",
+    "tables/stepwise_peak_edges.csv",
+    "tables/stepwise_peak_terminals.csv",
+    "tables/temporal_dekads.csv",
+    "tables/temporal_scale.csv",
+    "tables/uncertainty.csv"
+  ],
+  "indicators": {
+    "benchmark": {
+      "dataset": {
+        "attribution_pct_max": 49.99302818154177,
+        "attribution_pct_min": -35.834469394244316,
+        "attribution_terminal_max": "T1",
+        "attribution_terminal_min": "T20",
+        "attribution_terminals_over": [
+          "T1",
+          "T2",
+          "T3",
+          "T4",
+          "T5",
+          "T6",
+          "T7",
+          "T15"
+        ],
+        "dG_pct_range": [
+          -8.046341485034977,
+          1.3364960527672511
+        ],
+        "eta_M_bar": 0.6386585860471675,
+        "eta_T_bar": 0.8429517230954086,
+        "eta_a_bar": 0.43,
+        "eta_p": 0.23149409289859896,
+        "max_abs_dG_dekad": "25",
+        "max_abs_dG_pct": 8.046341485034977,
+        "max_abs_dG_pct_signed": -8.046341485034977,
+        "path_efficiency_range": [
+          0.14853941302936702,
+          0.34722499999999995
+        ],
+        "reassigned_m3": 3095735.8043315103,
+        "reassigned_pct_of_head": 10.92146122451083
+      },
+      "rule": {
+        "attribution_pct_max": 49.149811316878875,
+        "attribution_pct_min": -35.90470487237917,
+        "attribution_terminal_max": "T1",
+        "attribution_terminal_min": "T20",
+        "attribution_terminals_over": [
+          "T1",
+          "T2",
+          "T3",
+          "T4",
+          "T5",
+          "T6",
+          "T7",
+          "T8"
+        ],
+        "dG_pct_range": [
+          -8.062813298324407,
+          1.496521759505498
+        ],
+        "eta_M_bar": 0.6404378475820368,
+        "eta_T_bar": 0.9683958111371055,
+        "eta_a_bar": 0.43,
+        "eta_p": 0.26668485142360665,
+        "max_abs_dG_dekad": "25",
+        "max_abs_dG_pct": 8.062813298324407,
+        "max_abs_dG_pct_signed": -8.062813298324407,
+        "path_efficiency_range": [
+          0.1709324425806178,
+          0.39775995270900805
+        ],
+        "reassigned_m3": 2537584.040735439,
+        "reassigned_pct_of_head": 10.313254285635956
+      }
+    },
+    "dataset": {
+      "D_season": 15260002.326281397,
+      "G_basin_season": 17649900.017860662,
+      "G_basin_season_rho0": 28345436.02447453,
+      "G_basin_season_rho1": 6954364.011246796,
+      "G_h_season": 28345436.02447453,
+      "N_season": 6561801.000301001,
+      "closure_max_abs_residual_by_boundary": {
+        "B1": 2.159356517675075e-16,
+        "B2": 0.0,
+        "B3a": 3.7906754233245735e-16,
+        "B3b": 2.0850211936931838e-16,
+        "B4": 2.60627649211648e-16,
+        "B4+": 3.114099961699691e-16,
+        "B5": 2.335574971274768e-16
+      },
+      "consumed_season": 6954364.011246794,
+      "edge_capacity_exceedances": 51,
+      "overall_efficiency_season": 0.23149409289859896,
+      "source_capacity_exceedances": 16
+    },
+    "network": {
+      "edges": 35,
+      "edges_adjusted_by_rule": 18,
+      "main_canal_length_m": 1806.304988501628,
+      "main_edges": 15,
+      "nodes": 36,
+      "periods": 16,
+      "short_group_picket_range_m": [
+        0.0,
+        8.298644454943997
+      ],
+      "terminal_edges": 20,
+      "terminals": 20
+    },
+    "peak_dekad": "22",
+    "rule": {
+      "D_season": 15260002.326281397,
+      "G_basin_season": 15723614.533755561,
+      "G_basin_season_rho0": 24605075.861163657,
+      "G_basin_season_rho1": 6842153.206347468,
+      "G_h_season": 24605075.861163657,
+      "N_season": 6561801.000301001,
+      "closure_max_abs_residual_by_boundary": {
+        "B1": 2.159356517675075e-16,
+        "B2": 0.0,
+        "B3a": 4.980701731834825e-16,
+        "B3b": 3.36881083508274e-16,
+        "B4": 2.109646249609413e-16,
+        "B4+": 3.146938550763334e-16,
+        "B5": 2.3602039130725007e-16
+      },
+      "consumed_season": 6842153.206347467,
+      "edge_capacity_exceedances": 47,
+      "overall_efficiency_season": 0.26668485142360665,
+      "source_capacity_exceedances": 16
+    },
+    "sobol_ranking_by_ST": {
+      "G_basin": [
+        "rho_S",
+        "rho_F",
+        "eta_a",
+        "eta_e_main",
+        "rho_O",
+        "phi_O",
+        "eta_e_terminal",
+        "phi_E"
+      ],
+      "G_h": [
+        "eta_a",
+        "eta_e_main",
+        "eta_e_terminal",
+        "phi_E",
+        "phi_O",
+        "rho_F",
+        "rho_O",
+        "rho_S"
+      ]
+    },
+    "temporal": {
+      "dataset": {
+        "0.45": {
+          "G_h_total_by_scale": {
+            "dekad": 27994312.28969837,
+            "month": 28032526.181088347,
+            "season": 28345436.02447453
+          },
+          "dekad_diff_pct_max": 112.3951044805826,
+          "dekad_diff_pct_max_dekad": "26",
+          "dekad_diff_pct_min": -7.718832890487926,
+          "dekad_diff_pct_min_dekad": "22",
+          "dekad_vs_season_pct": -1.238731111678748,
+          "max_fixed_point_iterations": 29,
+          "month_vs_season_pct": -1.1039161405596465,
+          "order_dekad_le_month_le_season": true
+        },
+        "0.5": {
+          "G_h_total_by_scale": {
+            "dekad": 28003889.326342635,
+            "month": 28041060.85240989,
+            "season": 28345436.02447453
+          },
+          "dekad_diff_pct_max": 134.10938306541013,
+          "dekad_diff_pct_max_dekad": "26",
+          "dekad_diff_pct_min": -8.350358193817586,
+          "dekad_diff_pct_min_dekad": "22",
+          "dekad_vs_season_pct": -1.204944238067085,
+          "max_fixed_point_iterations": 37,
+          "month_vs_season_pct": -1.0738066325803985,
+          "order_dekad_le_month_le_season": true
+        }
+      },
+      "rule": {
+        "0.45": {
+          "G_h_total_by_scale": {
+            "dekad": 24301491.058330838,
+            "month": 24334569.323537033,
+            "season": 24605075.86116365
+          },
+          "dekad_diff_pct_max": 112.15299029391788,
+          "dekad_diff_pct_max_dekad": "26",
+          "dekad_diff_pct_min": -7.664454589917236,
+          "dekad_diff_pct_min_dekad": "22",
+          "dekad_vs_season_pct": -1.2338299810405684,
+          "max_fixed_point_iterations": 29,
+          "month_vs_season_pct": -1.099393227450196,
+          "order_dekad_le_month_le_season": true
+        },
+        "0.5": {
+          "G_h_total_by_scale": {
+            "dekad": 24309777.277503744,
+            "month": 24341949.827128746,
+            "season": 24605075.86116365
+          },
+          "dekad_diff_pct_max": 133.81839717797678,
+          "dekad_diff_pct_max_dekad": "26",
+          "dekad_diff_pct_min": -8.291680077917574,
+          "dekad_diff_pct_min_dekad": "22",
+          "dekad_vs_season_pct": -1.2001531120088949,
+          "max_fixed_point_iterations": 37,
+          "month_vs_season_pct": -1.0693973695493408,
+          "order_dekad_le_month_le_season": true
+        }
+      }
+    },
+    "uncertainty": {
+      "dataset|common": {
+        "G_basin_season_p05_p50_p95": [
+          10507191.699192278,
+          17378182.08101526,
+          26299644.358145908
+        ],
+        "G_h_season_cv": 0.1334671415049057,
+        "G_h_season_mean_over_nominal_minus_1": 0.006264005133063133,
+        "G_h_season_p05_p50_p95": [
+          22860043.833026446,
+          28190266.970550656,
+          35126434.79932453
+        ],
+        "sd_ratio_mc_over_first_order_max_abs_dev_dekads": 0.0035968788737557045,
+        "sd_ratio_mc_over_first_order_season": 1.0026543717351344
+      },
+      "dataset|independent": {
+        "G_basin_season_p05_p50_p95": [
+          10672989.80456118,
+          17504983.63164383,
+          24890137.809039935
+        ],
+        "G_h_season_cv": 0.06688211319498165,
+        "G_h_season_mean_over_nominal_minus_1": -0.00214434819348297,
+        "G_h_season_p05_p50_p95": [
+          25290387.55413019,
+          28230517.80132608,
+          31509476.645213477
+        ],
+        "sd_ratio_mc_over_first_order_max_abs_dev_dekads": 0.014062026829606,
+        "sd_ratio_mc_over_first_order_season": 0.987222463244445
+      },
+      "rule|common": {
+        "G_basin_season_p05_p50_p95": [
+          9774091.974556671,
+          15613171.987438414,
+          22420738.96863805
+        ],
+        "G_h_season_cv": 0.10967505517602502,
+        "G_h_season_mean_over_nominal_minus_1": 0.002610477856467952,
+        "G_h_season_p05_p50_p95": [
+          20556072.77395623,
+          24504010.48579179,
+          29382423.81421279
+        ],
+        "sd_ratio_mc_over_first_order_max_abs_dev_dekads": 0.002312502779110881,
+        "sd_ratio_mc_over_first_order_season": 0.998192308814945
+      },
+      "rule|independent": {
+        "G_basin_season_p05_p50_p95": [
+          9867425.393154966,
+          15540507.39881317,
+          21726688.63057177
+        ],
+        "G_h_season_cv": 0.06638406936511569,
+        "G_h_season_mean_over_nominal_minus_1": -0.00332286483874189,
+        "G_h_season_p05_p50_p95": [
+          21941451.717474982,
+          24481978.800185494,
+          27313053.74831366
+        ],
+        "sd_ratio_mc_over_first_order_max_abs_dev_dekads": 0.014212432912667161,
+        "sd_ratio_mc_over_first_order_season": 0.9871960236963375
+      }
+    },
+    "variant_difference_pct": {
+      "max_dekad": 15.621818148048172,
+      "season": 15.201579480657523
+    }
+  },
+  "nominal_scalars": {
+    "eta_a": 0.43,
+    "phi_E": 0.03,
+    "phi_O": 0.07,
+    "phi_S": 0.8999999999999999,
+    "rho_F": 0.5,
+    "rho_O": 0.5,
+    "rho_S": 0.5
+  },
+  "package_version": "0.1.0",
+  "parameters_file": {
+    "file": "parameters.json",
+    "sha256": "af69ae22563f7c40a9f977b8b7deb44e64d2dc86f4e2cf2ea99aec132fde9b1d"
+  },
+  "primary_variant": "dataset",
+  "provisional_parameters": [
+    "edge_loss_rel_halfwidth",
+    "rho_S",
+    "rho_O",
+    "rho_F",
+    "delta_S"
+  ],
+  "quick": false,
+  "sample_sizes": {
+    "master_seed": 20261110,
+    "monte_carlo": 10000,
+    "sobol_base_n": 32768,
+    "sobol_bootstrap": 500
+  },
+  "temporal_settings": {
+    "fixed_point_tolerance": 1e-15,
+    "flow_dependent_edge_type": "main",
+    "kostiakov_m_nominal": 0.5,
+    "kostiakov_m_values": [
+      0.45,
+      0.5
+    ]
+  },
+  "variants": [
+    "dataset",
+    "rule"
+  ]
+}

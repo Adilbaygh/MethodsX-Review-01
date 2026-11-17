@@ -1,0 +1,15 @@
+{
+  "cpu_count": 12,
+  "machine": "AMD64",
+  "os": "Windows-10-10.0.19045-SP0",
+  "packages": {
+    "grossreq": "0.1.0",
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.4",
+    "pytest": "9.2.0"
+  },
+  "processor": "AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD",
+  "python": "3.14.7",
+  "python_implementation": "CPython",
+  "recorded_utc": "2026-11-11T17:57:43+00:00"
+}

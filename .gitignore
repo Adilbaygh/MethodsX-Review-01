@@ -1,0 +1,27 @@
+# Allowlist: ignore everything, then re-include the published files.
+/*
+!/.gitignore
+!/.gitattributes
+!/LICENSE
+!/CITATION.cff
+!/README.md
+!/requirements.txt
+!/requirements-lock.txt
+!/main.py
+!/pytest.ini
+!/src/
+!/tests/
+!/results/
+!/scripts/
+/scripts/*
+!/scripts/record_environment.py
+!/scripts/make_figures.py
+!/DATA/
+/DATA/*
+!/DATA/gone_abat_jap_am2a.json
+!/DATA/parameters.json
+!/DATA/SHA256SUMS
+!/DATA/PROVENANCE.md
+__pycache__/
+*.pyc
+.pytest_cache/

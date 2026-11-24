@@ -199,8 +199,9 @@ Mendeley Data.
 
 ## Citation
 
-Please cite the dataset together with this package: A. Kudaybergenov, A. Kabulov,
-M. Kazimbetova, G. Ametova, J. Ispanova, Input Data and Controlled-Scenario Outputs for the
-Gone Abat Jap Irrigation Allocation Model, Mendeley Data, V1, 2026,
-https://doi.org/10.17632/xt3gsf89n9.1. `CITATION.cff` gives the citation of the package; the
-article will be added when it is published.
+This package, version 0.1.0, is archived in Zenodo: https://doi.org/10.5281/zenodo.24496308.
+Please cite it together with the dataset: A. Kudaybergenov, A. Kabulov, M. Kazimbetova,
+G. Ametova, J. Ispanova, Input Data and Controlled-Scenario Outputs for the Gone Abat Jap
+Irrigation Allocation Model, Mendeley Data, V1, 2026, https://doi.org/10.17632/xt3gsf89n9.1.
+`CITATION.cff` gives the citation of the package; the article will be added when it is
+published.

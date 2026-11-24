@@ -3,6 +3,8 @@ message: "If you use this software, please cite it as below, together with the d
 type: software
 title: "grossreq: worked example from field-level net irrigation demand to boundary-specific gross requirements"
 version: 0.1.0
+doi: 10.5281/zenodo.24496308
+date-released: "2026-11-24"
 license: MIT
 repository-code: "https://github.com/Adilbaygh/MethodsX-Review-01"
 authors:
